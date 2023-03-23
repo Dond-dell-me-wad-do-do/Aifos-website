@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="hu-en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="fooldal.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="keywords" content="assistant">
+    <title>A.I.F.O.S.</title>
+</head>
+<body>
+    <h1>---- A.I.F.O.S. ----</h1>
+<div class="doboz">
+<p>
+A program maga egy Siri-hez hasonlító AI asszisztens .
+A jelenleg letölthető verzió egy demó amely társalgásra nem alkalmas és néhány más parancs is ki van véve.
+Amennyiben talál bugokat a programban <span class="kiemelt">ezen az email címen keresztül jelezheti felém: </span><a href="mailto:vidtomka@gmail.com">Email cím</a>
+</p>
+<p>
+<h2>Felépítése és működése</h2>
+Az alkalmazás kettő alprogramból (a két mód) és 3 egybegyúrt guiból áll (a parancsok a beállítások és a témák). 
+Ezek működése részben összehangolt részben nem:
+<ol>
+    <li>
+    Például a "Témák" beállítási lehetőség nincs összhangban a programmal, mert újra kell indítani ha új témát állítottunk be
+    </li>
+    <li>
+    Viszont a "Mentés" gomb esetén már más a helyzet, mert az új beállítási lehetősageket azonnal elmenti és újra konfigurálja automatikusan újraindítás nélkül
+    </li>
+</ol>
+A beállítások menü továbbá hibát jelez amennyiben valamlyen kötelező beállítás nincs beállítva pl.: nincs megadva útvonal, igy a program nem tudja, hogy hova hozza létre a fájlokat.
+<br>
+Vagy felhasználónév, ilyenkor a program nem tudja, hogy hogyan szólíthatja önt és mint ahogy a képen is látható egyik módot sem tudja elindítani amig nincsenek mega szükséges beállítások
+</p>
+<div class="doboz2"></div>
+
+<p>
+    A programot itt töltheti le: <a href="AIFOSdemo.zip">Download</a>
+</p>
+</div>
+
+
+
+<!--
+################################################################################################################
+################################################################################################################
+################################################################################################################
+################################################################################################################
+-->
+<div class="slideshow-container">
+  <p class="bekezdes">
+    Így néz ki a program:
+    </p>
+    <div class="mySlides fade">
+      
+      <img src="fogui.png" class="kep">
+      
+    </div>
+    
+    <div class="mySlides fade">
+      
+      <img src="bealgui.png" class="kep">
+      
+    </div>
+    
+    <div class="mySlides fade">
+      
+      <img src="mod1gui.png" class="kep">
+      
+    </div>
+    
+    <div class="mySlides fade">
+        
+        <img src="mod2gui.png" class="kep">
+        
+      </div>
+    <br>
+    <p class="bekezdes">
+    <a href="ujoldlad.html">Egyéb érdekességek a programról</a>
+    </p>
+    </div>
+    <br>
+    
+    <div style="text-align:center">
+      <span class="dot" onclick="currentSlide(1)"></span> 
+      <span class="dot" onclick="currentSlide(2)"></span> 
+      <span class="dot" onclick="currentSlide(3)"></span> 
+      <span class="dot" onclick="currentSlide(4)"></span> 
+    </div>
+
+    
+
+    <script>
+        let slideIndex = 0;
+        showSlides();
+        
+        function showSlides() {
+          let i;
+          let slides = document.getElementsByClassName("mySlides");
+          let dots = document.getElementsByClassName("dot");
+          for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";  
+          }
+          slideIndex++;
+          if (slideIndex > slides.length) {slideIndex = 1}    
+          for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+          }
+          slides[slideIndex-1].style.display = "block";  
+          dots[slideIndex-1].className += " active";
+          setTimeout(showSlides, 4000); // Change image every 4 seconds
+        }
+        </script>
+<!--
+################################################################################################################
+################################################################################################################
+################################################################################################################
+################################################################################################################
+-->
+</body>
+</html>

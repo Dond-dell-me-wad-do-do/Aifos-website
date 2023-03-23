@@ -1,0 +1,104 @@
+body{
+    background-color: deepskyblue;
+    font-size: 25px;
+    background-image: url('robot.jpg');
+    background-repeat: no-repeat;
+    color: cornsilk;
+    background-size: cover;
+}
+h1{
+    font-size: 50px;
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+}   
+.kiemelt{
+    font-weight: bold;
+}
+.doboz{
+    width: 800px;
+    text-align: justify;
+    margin-right: 70%;
+}
+.doboz2{
+    height: 200px;
+}
+.doboz3{
+  float: right;
+}
+.bekezdes{
+  text-align: center;
+}
+a{
+  color: aqua;
+}
+.nev{
+  background: linear-gradient(90deg,#00dbd2,#fc00ff);
+  background-clip: inherit;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 40px;
+}
+/*
+################################################################################################################
+################################################################################################################
+################################################################################################################
+################################################################################################################
+*/
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 400px;
+  position: fixed;
+  top: 120px;
+  right: 20px;
+
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
+}
+
+/*
+################################################################################################################
+################################################################################################################
+################################################################################################################
+################################################################################################################
+*/
+.kep{
+    width: 400px;
+    height: 300px;
+    
+
+}

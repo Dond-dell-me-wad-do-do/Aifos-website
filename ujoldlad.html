@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="fooldal.css">
+    <title>A.I.F.O.S. érdekességek</title>
+</head>
+<body>
+<div class="doboz">
+<h2>Program fejlesztési dőtartama és körülményei</h2>
+    A teljes program fejlesztése másfél évvel ez előtt kezdődőtt el akkor is csak poénból gondoltam, hogy megcsinálom.<br>
+    (ahhoz, hogy megcsináljam ahhoz hozzájárult az is, hogy akkor néztem újra a <a href="https://hu.frwiki.wiki/wiki/Iron_Man_(film)" target="_blank">Vasember</a> trilógiát :D).
+    A fejlesztési körülményei AIFOS-nak sokszor érdekesek voltak: <br><br>
+        A projekt elején hatalmas lendülettel csináltam és alkottam bele pl.: <br>
+        <ol>
+            <li>Maga a beszéd funkció vagy, hogy milyen parancsai legyenek, ezek kidolgozása<br>(ugyanis kezdetben csak a hangal vezérelhető módja volt  gui nélkül)</li>
+            <li>Később jött a főgui fele aminek fejlesztése közben sajátítottam el a <a href="https://en.wikipedia.org/wiki/Tkinter" target="_blank">tkinter</a> python gui fejlesztő module sajátosságait</li>
+            <li>Ezek után a többi már csak történelem, mert ezek után jött lényegében az írással vezérelhető módja később a beállítások stb</li>
+        </ol>
+    Később azonban a lendület alábbhagyott, mert ahogy haladtam a fejlesztésével úgy kezdtem egy re jobban kifogyni a funkcióötletekből, de ez természetes, hiszen kezdetben volt egy "ötlet tárházam" amiől merítettem és ez a végére kezdett kifogyni, de folyamatosan újratöltöm.
+    <br><br>
+    Szóval a fejlesztése AIFOS-nak nem fog leállni.
+    <h2>A név eredete:</h2>
+    <p>
+        A fejlesztés legelső fázisaiban a program neve "Karen" volt, de ezt nem tartottam megfelelőnek, mert nem tudtam semmi jelentést adni neki<br>
+        és ugye tudjuk, hogy a karennek van egy jelentése is. AIFOS-ra azért váltottam, mert ennek már tudtam jelentést adni:
+    </p>
+    <p class="nev">-- Artificient Intelligent File Operation System</p>
+     
+</div>
+    <!--
+################################################################################################################
+################################################################################################################
+################################################################################################################
+################################################################################################################
+-->
+<div class="slideshow-container">
+    <p class="bekezdes">
+        Így néz ki a program:
+        </p>
+    <div class="mySlides fade">
+      
+      <img src="fogui.png" class="kep">
+      
+    </div>
+    
+    <div class="mySlides fade">
+      
+      <img src="bealgui.png" class="kep">
+      
+    </div>
+    
+    <div class="mySlides fade">
+      
+      <img src="mod1gui.png" class="kep">
+      
+    </div>
+    
+    <div class="mySlides fade">
+        
+        <img src="mod2gui.png" class="kep">
+        
+      </div>
+    <br>
+    <p class="bekezdes">
+    <a href="fooldal.html">Vissza a főoldalra</a>
+    </p>
+    </div>
+    <br>
+    
+    <div style="text-align:center">
+      <span class="dot" onclick="currentSlide(1)"></span> 
+      <span class="dot" onclick="currentSlide(2)"></span> 
+      <span class="dot" onclick="currentSlide(3)"></span> 
+      <span class="dot" onclick="currentSlide(4)"></span> 
+    </div>
+
+    
+
+    <script>
+        let slideIndex = 0;
+        showSlides();
+        
+        function showSlides() {
+          let i;
+          let slides = document.getElementsByClassName("mySlides");
+          let dots = document.getElementsByClassName("dot");
+          for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";  
+          }
+          slideIndex++;
+          if (slideIndex > slides.length) {slideIndex = 1}    
+          for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+          }
+          slides[slideIndex-1].style.display = "block";  
+          dots[slideIndex-1].className += " active";
+          setTimeout(showSlides, 4000); // Change image every 4 seconds
+        }
+        </script>
+<!--
+################################################################################################################
+################################################################################################################
+################################################################################################################
+################################################################################################################
+-->
+</body>
+</html>
